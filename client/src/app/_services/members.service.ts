@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Member } from '../_models/member';
-import { from, of, pipe } from 'rxjs';
+import { of, pipe } from 'rxjs';
 import { map, take } from 'rxjs/operators';
 import { PaginatedResult } from '../_models/pagination';
 import { UserParams } from '../_models/userParams';
 import { AccountService } from './account.service';
 import { User } from '../_models/user';
-import { getPaginatedResult, getPaginationHeaders} from './paginationHelper';
+import { getPaginatedResult, getPaginationHeaders } from './paginationHelper';
 
 @Injectable({
   providedIn: 'root'

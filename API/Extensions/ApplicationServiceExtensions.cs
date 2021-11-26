@@ -20,7 +20,8 @@ namespace API.Extensions
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddDbContext<DataContext>(options =>
               {
-                  options.UseSqlite(config.GetConnectionString("DefaultConnection"));
+                    options.UseSqlite(config.GetConnectionString("DefaultConnection"));
+                //   options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
             
                 // var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
@@ -61,4 +62,4 @@ namespace API.Extensions
         }
     }
 }
- // "DefaultConnection": "Server = localhost; Port=5432; User Id=appuser; Password=Papostgres:latestw0rd Database=datingapp"
+ 

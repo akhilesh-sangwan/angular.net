@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20211125101051_LikeEntityAdded")]
-    partial class LikeEntityAdded
+    [Migration("20211126152352_UserPasswordAdded")]
+    partial class UserPasswordAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
