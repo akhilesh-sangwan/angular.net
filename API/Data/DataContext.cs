@@ -114,5 +114,7 @@ namespace API.Data
                 }
             }
         }
+ 
+//  Server=localhost; Port=5432; User Id=appuser; Password=Parunw0rd; Database=datingapp
     }
 }
